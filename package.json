@@ -1,5 +1,5 @@
 {
-  "name": "ngde",
+  "name": "ngdec",
   "version": "0.0.0-alpha.0",
   "type": "module",
   "description": "some decorators of typescript for angular",
