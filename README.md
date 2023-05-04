@@ -1,4 +1,4 @@
-# ngde：在angular项目中使用的typescript装饰器
+# ngdec：在angular项目中使用的typescript装饰器
 
 ## API列表
 
@@ -15,7 +15,7 @@
 安装
 
 ```bash
-npm install ngde
+npm install ngdec
 ```
 
 ## API详情
@@ -56,7 +56,7 @@ declare const memo: <T extends object, V = any>(
 #### 1.3 demo
 
 ```typescript
-import { memo } from 'ngde'
+import { memo } from 'ngdec'
 
 class SomeComponent {
   @memo((com) => [com.value1, com.value2])
@@ -113,7 +113,7 @@ declare const memoAuto: <T extends object, V = any>(
 #### 2.3 demo
 
 ```typescript
-import { memoAuto } from 'ngde'
+import { memoAuto } from 'ngdec'
 
 let extraDependence = 'value3' // “外部依赖”，声明外部依赖的方法有两种
 class SomeComponent {
@@ -178,7 +178,7 @@ declare const effect: <T extends DoCheck>(
 #### 3.3 demo
 
 ```typescript
-import { effect } from 'ngde'
+import { effect } from 'ngdec'
 let extraDependence = 'extraDependence'
 class SomeComponent {
   @effectAuto(() => [extraDependence])
@@ -221,7 +221,7 @@ declare const effectAuto: <T extends DoCheck>(
 #### 3.3 demo
 
 ```typescript
-import { effect } from 'ngde'
+import { effect } from 'ngdec'
 
 class SomeComponent {
   @effect((com) => [com.value1, com.value2])

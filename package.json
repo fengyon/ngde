@@ -1,5 +1,5 @@
 {
-  "name": "ngde",
+  "name": "ngdec",
   "version": "0.0.0-alpha.0",
   "type": "module",
   "description": "some decorators of typescript for angular",
@@ -8,10 +8,10 @@
   "typings": "./dist/src/index.d.ts",
   "browser": "./dist/index.js",
   "author": "fengyon",
-  "repository": "git@github.com:fengyon/ngde.git",
-  "homepage": "http://github.com/fengyon/ngde",
+  "repository": "git@github.com:fengyon/ngdec.git",
+  "homepage": "http://github.com/fengyon/ngdec",
   "bugs": {
-    "url": "http://github.com/fengyon/ngde/issues"
+    "url": "http://github.com/fengyon/ngdec/issues"
   },
   "files": [
     "dist/",

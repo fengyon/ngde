@@ -7,7 +7,7 @@ import typescript from '@rollup/plugin-typescript'
 import terser from '@rollup/plugin-terser'
 const banner = `
 /**
- * ngde - some decorators of typescript for angular 
+ * ngdec - some decorators of typescript for angular 
  * Copyright (c) 2023-${new Date().getFullYear()}, Fengyon. (MIT Licensed)
  * https://github.com/fengyon/ngde
  */
