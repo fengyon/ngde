@@ -1,6 +1,6 @@
 {
   "name": "ngde",
-  "version": "0.0.1",
+  "version": "0.0.0-alpha.0",
   "type": "module",
   "description": "some decorators of typescript for angular",
   "main": "./dist/index.js",
@@ -29,14 +29,18 @@
     "start": "npm run build"
   },
   "keywords": [
-    "markdown",
-    "image",
-    "parser"
+    "angular",
+    "decorator",
+    "memo",
+    "effect",
+    "ngde"
   ],
   "tags": [
-    "markdown",
-    "image",
-    "parser"
+    "angular",
+    "decorator",
+    "memo",
+    "effect",
+    "ngde"
   ],
   "pre-commit": [
     "eslint"
