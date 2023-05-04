@@ -1,0 +1,110 @@
+{
+  "name": "ngde",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "some decorators of typescript for angular",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "typings": "./dist/src/index.d.ts",
+  "browser": "./dist/index.js",
+  "author": "fengyon",
+  "repository": "git@github.com:fengyon/ngde.git",
+  "homepage": "http://github.com/fengyon/ngde",
+  "bugs": {
+    "url": "http://github.com/fengyon/ngde/issues"
+  },
+  "files": [
+    "dist/",
+    "src"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "jest",
+    "changelogs": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "prettier src/**/*.{js,ts,json} --write && eslint src/**/*.{js,ts} --fix",
+    "commit": "cz",
+    "dev": "rollup -w -c rollup.config.js --environment FORMAT:esm",
+    "build": "rimraf dist/* && rollup -c rollup.config.js",
+    "start": "npm run build"
+  },
+  "keywords": [
+    "markdown",
+    "image",
+    "parser"
+  ],
+  "tags": [
+    "markdown",
+    "image",
+    "parser"
+  ],
+  "pre-commit": [
+    "eslint"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint",
+      "pre-commit": "lint-staged",
+      "pre-push": "test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-strip": "^3.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/chai": "^4.3.5",
+    "@types/jest": "^29.5.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "babel": "^6.23.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "mocha": "^10.2.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.8.8",
+    "rollup": "^3.21.1",
+    "rollup-plugin-node-externals": "^5.1.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "@rollup/plugin-terser": "^0.4.1",
+    "tslib": "^2.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "sideEffects": false,
+  "dependencies": {}
+}
